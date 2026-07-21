@@ -220,6 +220,10 @@ def main():
     """
 
     # Load configuration
+    from config.settings import settings
+
+    print(settings.APP_NAME)
+    print(settings.DATABASE_URL)
 
     # Initialize logger
 
