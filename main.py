@@ -210,22 +210,15 @@ scheduler_loop()
 ===============================================================================
 """
 from config.settings import settings
+from database.sqlite import connect_database
 
 def main():
-    """
-    This function should only coordinate the application.
-
-    It should NOT contain scraping logic.
-
-    It should simply initialize components and start the program.
-    """
-
+    
 
     # Initialize logger
 
-    # Connect databases
+    database = connect_database()
 
-    # Initialize AI models
 
     # Initialize scraper manager
 
