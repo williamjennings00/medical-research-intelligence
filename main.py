@@ -211,12 +211,11 @@ scheduler_loop()
 """
 from config.settings import settings
 from database.sqlite import connect_database
+from utils.logger import logger
 
 def main():
     
-
-    # Initialize logger
-
+    logger.info("Starting Medical Research Intelligence")
     database = connect_database()
 
 
