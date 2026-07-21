@@ -209,6 +209,7 @@ scheduler_loop()
 
 ===============================================================================
 """
+from config.settings import settings
 
 def main():
     """
@@ -219,11 +220,6 @@ def main():
     It should simply initialize components and start the program.
     """
 
-    # Load configuration
-    from config.settings import settings
-
-    print(settings.APP_NAME)
-    print(settings.DATABASE_URL)
 
     # Initialize logger
 
