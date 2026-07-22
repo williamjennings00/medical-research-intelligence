@@ -1,3 +1,5 @@
+from utils.logger import logger
+
 class MainMenu:
     def __init__(self):
         self.options = {
@@ -14,14 +16,14 @@ class MainMenu:
         }
 
     def show(self):
-        print("\n" + "=" * 60)
-        print("      Medical Research Intelligence")
-        print("=" * 60)
+        logger.info("\n" + "=" * 60)
+        logger.info("      Medical Research Intelligence")
+        logger.info("=" * 60)
 
         for key, value in self.options.items():
-            print(f"[{key}] {value}")
+            logger.info(f"[{key}] {value}")
 
-        print("=" * 60)
+        logger.info("=" * 60)
 
     def get_choice(self):
         return input("Select an option: ").strip()
