@@ -212,13 +212,53 @@ scheduler_loop()
 from config.settings import settings
 from database.sqlite import connect_database
 from utils.logger import logger
+from ui.menu import MainMenu
+
 
 def main():
     
     logger.info("Starting Medical Research Intelligence")
     database = connect_database()
 
-    
+    menu = MainMenu()
+
+    while True:
+        menu.show()
+        choice = menu.get_choice()
+
+        if choice == "1":
+            print("\nLaunching Literature Search...\n")
+
+        elif choice == "2":
+            print("\nLaunching Gene Lookup...\n")
+
+        elif choice == "3":
+            print("\nLaunching Sequence Search...\n")
+
+        elif choice == "4":
+            print("\nLaunching Protein Analysis...\n")
+
+        elif choice == "5":
+            print("\nLaunching Disease Research...\n")
+
+        elif choice == "6":
+            print("\nLaunching Mutation Analysis...\n")
+
+        elif choice == "7":
+            print("\nLaunching Protein Structures...\n")
+
+        elif choice == "8":
+            print("\nGenerating Report...\n")
+
+        elif choice == "9":
+            print("\nOpening Settings...\n")
+
+        elif choice == "0":
+            print("\nGoodbye!")
+            break
+
+        else:
+            print("\nInvalid selection.\n")
     
     # Start scheduler
 
