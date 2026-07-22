@@ -10,9 +10,9 @@ A platform for collecting, organizing, and analyzing medical research data.
 - Store research locally
 
 ## Requirements
-
 - Python 3.13.0
-
+- SQLite (included with Python)
+- Biopython
 
 ## Run
 ```bash
