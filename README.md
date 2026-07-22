@@ -1,4 +1,4 @@
-# Medical Research Intelligence Platform
+# Medical Research Intelligence
 
 A Python platform for collecting, organizing, and analyzing medical research data.
 
