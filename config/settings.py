@@ -30,5 +30,8 @@ class Config:
         self.DATABASE_USER = os.getenv("DATABASE_USER")
         self.DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
 
+        # User
+        self.EMAIL = os.getenv("")
+
 
 settings = Config()
