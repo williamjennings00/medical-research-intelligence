@@ -16,5 +16,5 @@ A platform for collecting, organizing, and analyzing medical research data.
 
 ## Run
 ```bash
-python main.py
+python3 main.py
 ```
