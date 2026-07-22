@@ -1,6 +1,6 @@
 # Medical Research Intelligence
 
-A Python platform for collecting, organizing, and analyzing medical research data.
+A platform for collecting, organizing, and analyzing medical research data.
 
 ## Features
 
