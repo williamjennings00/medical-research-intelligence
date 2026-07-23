@@ -2,7 +2,7 @@ from config.settings import settings
 from database.sqlite import connect_database
 from utils.logger import logger
 from ui.menu import MainMenu
-
+from scraper.pubmed import pubmed_search
 
 def main():
     
@@ -20,6 +20,9 @@ def main():
 
         elif choice == "2":
             logger.info("\nLaunching Gene Lookup...\n")
+            gene_name = input("Enter gene symbol (e.g. TP53, BRCA1): ")
+            organism = input("Enter organism [Homo sapiens]: ") or "Homo sapiens"       
+            result = pubmed_search.fetch_gene(gene_name, organism)
 
         elif choice == "3":
             logger.info("\nLaunching Sequence Search...\n")
